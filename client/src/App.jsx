@@ -23,6 +23,16 @@ function App() {
         fetchNews();
     }, []);
 
+    axios.defaults.withCredientials = true;
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios.post('https://newscope-bay.vercel.app')
+        .then(result => console.log(result))
+        .catch(err => console.log(err))
+
+    }
+
+
     return (
         <Router>
             <Routes>
