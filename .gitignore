@@ -1,7 +1,6 @@
 .env
 # Ignore node_modules and .env for both directories
 /api/node_modules
-/api/.env
 
 /client/node_modules
 /client/.env
