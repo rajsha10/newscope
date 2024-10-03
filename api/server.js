@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json()); // Middleware to parse JSON
 
 const corsOptions = {
-     origin: 'https://innews-snu-fmwc.vercel.app/', // Replace with your frontend's URL
+     origin: 'https://newscope-sjmt.vercel.app/', // Replace with your frontend's URL
      methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
      credentials: true, // Allow credentials (e.g., cookies) to be sent
 };
