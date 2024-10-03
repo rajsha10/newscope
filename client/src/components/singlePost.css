@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'FigN'; 
+    src: url('/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto'; 
+    src: url('/fonts/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FigI'; 
+    src: url('/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.single-news-area{
+    display: flex;
+    gap: 1rem;
+}
+
+.single-post{
+    margin-top: 1rem;
+    height: auto;
+    width: 90%;
+    background-color: whitesmoke;
+
+}
+
+.single-news-tile {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 0.4rem;
+    padding: 1rem;
+    height: 98%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+
+.news-thumbnail{
+    width: 90%;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+}
+
+.news-title{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Noto'; 
+    margin-top: 2rem;
+}
+
+.news-description{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-top: 2rem;
+    color: #0a0a59;
+    font-family: 'FigN';
+    max-width: 90%;
+}
+
+.news-author-date{
+    width: 100%;
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.news-date {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.news-youtube{
+    margin: 2rem 0;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 480px) {
+    .main-container{
+        gap: 0.5rem;
+    }
+    
+    .single-news-area{
+        gap: 0.8rem;
+    }
+    
+    .single-post{
+        margin-top: 0.6rem;
+        height: auto;
+        width: 85%;   
+    }
+    
+    .single-news-tile {
+        padding: 0.6rem;
+        height: 98%;
+    }
+    
+    .news-thumbnail{
+        width: 90%;
+        margin-top: 0.6rem;
+    }
+    
+    .news-title{
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+    
+    .news-description{
+        font-size: 0.9rem;
+        line-height: 1rem;
+        margin-top: 1rem;
+        max-width: 80%;
+    }
+    
+    .news-author-date{
+        margin-top: 1.3rem;
+    }
+    
+    .news-date {
+        font-size: 0.5em;
+    }
+    
+    .news-youtube{
+        margin: 1rem 0;
+        width: 20rem;
+        height: 11rem;
+    }
+}

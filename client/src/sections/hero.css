@@ -1,0 +1,140 @@
+
+@font-face {
+    font-family: 'FigN'; 
+    src: url('/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FigI'; 
+    src: url('/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+/* General slider container */
+.top-news {
+    width: 100%;
+    height: 70vh;
+    margin: 2rem 0;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Slider item (image container and text overlay) */
+.slider-item {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    text-align: left;
+}
+
+/* Image styling */
+.article-thumbnail {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Text overlay for articles */
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Title styling */
+.article-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'FigN'; 
+}
+
+/* Description styling */
+.article-description {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    max-width: 90%;
+    font-family: 'FigI'; 
+}
+
+/* Author and date container */
+.article-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Arrows */
+.slick-prev, .slick-next {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 24px;
+    color: white;
+}
+
+/* Adjust arrow positions */
+.slick-prev {
+    left: -60px;
+}
+
+.slick-next {
+    right: -60px;
+}
+
+/* Dots styling */
+.slick-dots li button:before {
+    font-size: 12px;
+    color: white;
+}
+
+.slick-dots li.slick-active button:before {
+    color: white;
+}
+
+/* media  */
+
+@media (max-width: 480px){
+    .top-news {
+        height: 40vh;
+    }
+    
+    .slider-item{
+        height: 40vh;
+
+    }
+
+    .article-title {
+        font-size: 2rem; 
+    }
+    
+    /* Description styling */
+    .article-description {
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+    }
+    
+    /* Author and date container */
+    .article-details {
+        font-size: 0.6rem;
+    }
+
+}

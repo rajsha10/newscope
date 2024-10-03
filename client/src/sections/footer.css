@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Noto'; 
+    src: url('/fonts/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+.footer {
+    background-color: #f8f5f5; /* Dark background */
+    color: 0a0a59; /* White text */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo-image {
+    max-width: 10rem; /* Adjust logo size */
+}
+
+.footer-nav, .footer-social {
+    flex: 1;
+}
+
+.footer-nav h4 {
+    margin-bottom: 10px;
+    font-family: 'Noto';
+}
+
+.footer-nav ul, .footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-nav li, .footer-social li {
+    margin: 5px 0;
+    font-family: 'Noto';
+    font-size: 1rem;
+}
+
+.footer-nav a, .footer-social a {
+    color: #0a0a59; /* White links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-nav a:hover, .footer-social a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Light border on top */
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px; /* Smaller font size */
+}
+
+/* Media  */
+@media (max-width: 480px) {
+    .footer {
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+    
+    .footer-logo-image {
+        max-width: 7rem;
+    }
+    
+    .footer-nav, .footer-social {
+        flex: 1;
+    }
+    
+    .footer-nav h4 {
+        margin-bottom: 7px;
+    }
+    
+    .footer-nav li, .footer-social li {
+        font-size: 0.7rem;
+    }
+    
+    .footer-bottom {
+        margin-top: 5px;
+        padding-top: 6px;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+        font-size: 0.6rem;
+    }
+}
