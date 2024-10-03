@@ -28,6 +28,10 @@ app.use("/api/v1/news", newsRouter);
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/admin",adminRouter);
 
+app.get("/", (req,res) => {
+     res.json("Hello");
+})
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
      console.log(`Server running on port ${PORT}`);
