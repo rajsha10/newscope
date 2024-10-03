@@ -31,8 +31,7 @@ export default function Hero({ articles, onArticleSelect }) {
                                 <h2 className="article-title">{article.title}</h2>
                                 <p className="article-description">{article.description.substring(0, 100)}...</p>
                                 <div className="article-details">
-                                    <p className="article-author">{article.author}</p>
-                                    <p className="article-date">{formatDate(article.createdAt)}</p>
+                                <p className="article-author">{article.author.name}</p> // Access the name property                                    <p className="article-date">{formatDate(article.createdAt)}</p>
                                 </div>
                             </div>
                         </div>

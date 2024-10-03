@@ -26,7 +26,7 @@ const NewsTiles = ({ articles, topRead }) => {
                             <h3 className="tile-title">{article.title}</h3>
                             <p className="tile-description">{article.description.substring(0, 100)}...</p>
                             <div className="tile-author-date">
-                                <p className="tile-author">{article.author}</p>
+                                <p className="tile-author">{article.author.name}</p>
                                 <p className="tile-date">{formatDate(article.createdAt)}</p>
                             </div>
                             {/* Sharing options */}
